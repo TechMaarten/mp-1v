@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #0F172A;
+    color: #E5E7EB;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#responsivehome,
+#responsivelead,
+#responsiveexp,
+#responsiveedu,
+#responsivepro,
+#responsivecsl,
+#responsive {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #0F172A;
+    color: #E5E7EB;
+}
+
+#head {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding-left: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    text-align: left;
+    border-bottom: 2px solid rgba(229,231,235,0.08);
+}
+
+#close {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    background-color: transparent;
+    width: 30%;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 5vh 0;
+    padding: 0;
+}
+
+#responsivehome #close ul {
+    margin: 7vh 0;
+}
+#responsivepro  #close ul {
+    margin: 7vh 0;
+}
+#responsivelead #close ul {
+    margin: 5vh 0;
+}
+
+nav li {
+    border: 2px solid rgba(229,231,235,0.12);
+    background-color: #1F2937;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+    padding: 3vh 2vw;
+    font-size: calc(1px + 1vw);
+    border-radius: 8px;
+}
+
+nav li:hover{
+    transform: translateY(-2px);
+    border-color: #22D3EE;
+    background-color: #1F2937;
+    box-shadow: 0 10px 24px rgba(34,211,238,.25);
+}
+
+nav a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: large;
+}
+
+main {
+    background-color: #0F172A;
+    color: #E5E7EB;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border-left: 2px solid rgba(229,231,235,0.08);
+}
+
+main ul {
+    list-style: none; padding: 0;
+}
+main p  {
+    font-size: large;
+}
+main a  {
+    color: #22D3EE; text-decoration: none;
+}
+main a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin: 1vh 0;
+    padding: 0.6% 1%;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
+    border-top: 2px solid rgba(229,231,235,0.08);
+}
+footer a {
+    color: #22D3EE;
+}
+
+img {
+    border: 4px solid rgba(229,231,235,0.12);
+    max-width: 80%;
+    height: auto;
+    margin: 4%;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.35);
+}
+
+#proj img   {
+    border-width: 2px; margin: 5vh;
+}
+#proj table {
+    margin-right: 3vw;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #E5E7EB;
+}
+
+th, td {
+    border-bottom: 1px solid #94A3B8;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    color: #94A3B8;
+    font-weight: 600;
+}
+
+#responsivehome main {
+    align-items: center;
+}
+
+#responsivehome #close img {
+    max-width: 55%;
+    margin: 3% 4%;
+}
+
+#responsivehome main p {
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: larger;
+}
+
+#nsbe {
+    margin-top: 7vh;
+}
+#umoja {
+    margin-top: 7vh; margin-right: 2vw;
+}
+#responsivelead footer {
+    margin: 5vh 0;
+}
+
+#exp {
+    margin-top: 5vh;
+}
+#responsiveexp footer {
+    margin: 2vh 0;
+}
+
+#edu {
+    margin-right: 10vw;
+}
+#responsiveedu main {
+    align-items: center;
+}
+
+#responsivecsl main {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#course, #skills, #lang {
+    margin: 0;
+    padding: 1rem;
+}
+#responsivecsl ul, #responsivecsl p {
+    text-align: center;
+}
+
+#responsive main p img {
+    max-width: 5%;
+}
+#responsive main p {
+    margin-top: 10%;
+    padding: 5%;
+    font-size: large;
+}
+#responsive footer {
+    margin: 2vh 0;
+    padding: 1%;
+}
+
+/* projects area colors */
+#responsivepro {
+    color: #E5E7EB;
+    background-color: #0F172A;
+}
+#responsivepro #close ul {
+    margin: 28vh 0;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #close {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        flex-direction: column;
+        border-left: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0 1vw 1vh 1vw;
+        padding: 1.2vh 2vw;
+    }
+
+    nav a {
+        font-size: calc(1px + 1vw);
+    }
+
+    #head {
+        text-align: center;
+    }
+
+    #responsivehome #close ul {
+        margin: 4vh 0;
+    }
+
+    #responsivehome #close img {
+        max-width: 70%;
+        margin: 4% 0;
+    }
+
+    #responsivepro #proj table {
+        margin: 0;
+    }
+
+    #responsivepro #proj img {
+        margin: 0;
+    }
+
+    #responsivepro #close ul {
+        margin: 4vh 0;
+    }
+
+    #responsivelead #close ul {
+        margin: 6vh 0;
+    }
+}
